@@ -11,13 +11,13 @@ import org.springframework.kafka.config.TopicBuilder;
 @SpringBootApplication
 public class PicpayDesafioBackendApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(PicpayDesafioBackendApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(PicpayDesafioBackendApplication.class, args);
+    }
 
-	@Bean
-	NewTopic notificationTopic() {
-		return TopicBuilder.name("transaction-notification")
-				.build();
-	}
+    @Bean
+    NewTopic notificationTopic() {
+        return TopicBuilder.name("transaction-notification")
+                .build();
+    }
 }
